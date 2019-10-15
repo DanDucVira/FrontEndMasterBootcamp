@@ -14,5 +14,59 @@ body {
 }
 
 .wrapper {
+    border: 1px solid black;
     width: 400px;
+    color: white;
+    background: black;
+    margin: 0 auto;
+}
+
+.screen {
+
+    text-align: right;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px 5px;
+    font-size: 40px;
+}
+
+.calc-button-row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 0.5%;
+}
+
+.calc-button {
+    background: #d8d9db;
+    color: black;
+    border: none;
+    font-size: 40px;
+    height: 100px;
+    flex-basis: 24.5%;
+
+}
+
+.calc-button:hover {
+    background: #ebebeb;
+}
+
+.calc-button:active {
+    background: #bbbcbe;
+}
+
+.double {
+    flex-basis: 49.7%;
+}
+
+.triple {
+    flex-basis: 74.8%;
+}
+
+.calc-button:last-child {
+    color: white;
+    background: #df974c;
+}
+
+.calc-button:last-child:hover {
+    background: #dfb07e;
 }
