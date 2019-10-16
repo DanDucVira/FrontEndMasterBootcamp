@@ -1,3 +1,4 @@
+//Strings
 const myName = "Daniel Ducas-Viramontes" //this is a string
 console.log(myName);
 
@@ -11,3 +12,11 @@ console.log(sentence);
 const templateString = `This is a template string`;
 const sentence2 = `Hello ${firstName}`;
 console.log(sentence2);
+
+
+//booleans
+
+const isTheSkyBlue = true;
+const isTheSkyRed = false;
+console.log(isTheSkyBlue);
+console.log(isTheSkyRed);
