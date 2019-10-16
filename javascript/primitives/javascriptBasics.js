@@ -20,3 +20,14 @@ const isTheSkyBlue = true;
 const isTheSkyRed = false;
 console.log(isTheSkyBlue);
 console.log(isTheSkyRed);
+
+
+//Numbers
+const age = 29;
+console.log(age);
+
+const year = 2019;
+console.log(year);
+
+const sum = 2 * 5;
+console.log(sum);
