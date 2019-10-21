@@ -28,4 +28,42 @@ if (friendsAtYourParty === 0) {
     console.log("Woooooo, play the dance music");
 }
 
+//loops
 
+//while loop
+let friends = 0;
+
+while (friends < 10) {
+    // friends = friends + 1;
+    friends += 1;
+    //friends++
+    //++friends
+}
+console.log(friends);
+
+//for loops
+let forLoop = 0;
+
+for (let i = 0; i <= 10; i++) {
+    forLoop++;
+}
+console.log(forLoop);
+
+
+///Looping Exercise
+/*
+  Write some code that declares two variables, character and timesToRepeact.
+  Using a loop, repeat that character that many times and then console.log it.
+  Example, if I had character = 'f' and timesToRepeat = 5, it'd console.log
+  'fffff'
+*/
+const character = 'f';
+const timesToRepeat = 5;
+let myString = '';
+
+//your code here ,some sort of loop
+for (let i = 0; i <= timesToRepeat; i++) {
+    myString += character;
+}
+
+console.log("myString");
