@@ -7,3 +7,10 @@ if (isSkyblue) {
 } else {
     console.log("the sky is ...not blue?");
 }
+
+//Equality comparisons
+const myVariable = 10;
+
+if (2 + 2 === 4) {
+    console.log("true");
+}
