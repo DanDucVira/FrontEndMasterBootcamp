@@ -16,3 +16,6 @@ console.log(Math.min(5.1, 1));
 const name = "Brian Holt";
 console.log(name.substr(6, 3));
 console.log(name.substring(6, 3));
+
+
+//
