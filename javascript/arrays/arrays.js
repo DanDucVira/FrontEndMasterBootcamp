@@ -16,6 +16,28 @@ const primeNumbers = [1, 2, 3, 5, 7, 11, 13, 17];
 console.log(primeNumbers.length);
 console.log(primeNumbers.join(" | "));
 
+var arr = [1, 2, 3];
+arr.push(4);
+// arr is now [1,2,3,4]
+
+var threeArr = [1, 4, 6];
+var oneDown = threeArr.pop();
+console.log(threeArr); // Returns [1, 4]
+
+// Example
+var ourArray = ["Stimpson", "J", ["cat"]];
+var removedFromOurArray = ourArray.shift();
+// removedFromOurArray now equals "Stimpson" and ourArray now equals ["J", ["cat"]].
+
+// Example
+var ourArray = ["Stimpson", "J", "cat"];
+ourArray.shift(); // ourArray now equals ["J", "cat"]
+ourArray.unshift("Happy");
+// ourArray now equals ["Happy", "J", "cat"]
+
+
+
+
 const courses = [{
         teacher: "Kyle Simpson",
         course: "JS Function Lite"
