@@ -89,3 +89,40 @@ const me = {
 };
 
 console.log(me.getAddress());
+
+
+//looping over arrays
+const cities = [
+    "Seattle",
+    "San Francisco",
+    "Salt Lake City",
+    "Amsterdam",
+    "Hong Kong"
+];
+
+// method 1
+for (let i = 0; i < cities.length; i++) {
+    console.log(cities[i]);
+}
+
+// method 2
+cities.forEach(function (city) {
+    console.log(city);
+});
+/*Output
+"Seattle"
+"San Francisco"
+"Salt Lake City"
+"Amsterdam"
+"Hong Kong"
+-------------
+"Seattle"
+"San Francisco"
+"Salt Lake City"
+"Amsterdam"
+"Hong Kong"
+undefined
+
+
+
+*/

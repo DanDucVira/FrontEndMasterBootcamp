@@ -83,7 +83,7 @@ for (let i = 0; i <= timesToRepeat; i++) {
 
 console.log("myString");
 
-//pseudocode fir switch statements
+//pseudocode for switch statements
 switch (num) {
     case value1:
         statement1;
