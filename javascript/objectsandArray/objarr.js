@@ -106,8 +106,8 @@ for (let i = 0; i < cities.length; i++) {
 }
 
 // method 2
-cities.forEach(function (city) {
-    console.log(city);
+cities.forEach(function (city, index) {
+    console.log(city, index);
 });
 /*Output
 "Seattle"
@@ -126,3 +126,12 @@ undefined
 
 
 */
+
+const someFunction = function () {
+    return 5
+}
+const someOtherFunction = function (fn) {
+    return fn();
+}
+
+someFunction();
