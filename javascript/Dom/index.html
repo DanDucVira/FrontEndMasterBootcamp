@@ -22,7 +22,13 @@
         <li class="js-target">Unchanged</li>
     </ul>
 
-    
+    <button class="event-button">Click me!</button>
+    <script>
+        const button = document.querySelector('.event-button');
+        button.addEventListener('click', function () {
+            alert("Hey there!");
+        });
+    </script>
     <script src="/javascript/Dom/dom.js"></script>
 </body>
 
