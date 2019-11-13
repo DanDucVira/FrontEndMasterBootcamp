@@ -1,4 +1,4 @@
-let runnungTotal = 0;
+let runningTotal = 0;
 let buffer = "0";
 let previousOperator;
 
@@ -13,9 +13,41 @@ function buttonClick(value) {
         //this is a number
         handleNumber(value);
     }
+    screen.innerText = buffer
 }
 
-function handleSymbol(symbol) {}
+function handleSymbol(symbol) {
+
+    switch (symbol) {
+        case 'C':
+            buffer = '0';
+            runningTotal = '0';
+            break;
+        case '&divide;':
+        case '&minus;':
+        case '&times;':
+        case '&plus;':
+            handleMath(symbol);
+            break;
+    }
+}
+
+function handleMath(symbol) {
+    if (buffer === '0') {
+        //do nothing
+        return;
+    }
+    const intBuffer = parseInt(buffer);
+
+    if (runningTotal === 0) {
+        runningTotal = intBuffer;
+    } else {
+        flushOperation(intBuffer);
+    }
+    previousOperator = symbol;
+
+    buffer = '0';
+}
 
 function handleNumber(numberString) {
     if (buffer === "0") {
@@ -23,7 +55,7 @@ function handleNumber(numberString) {
     } else {
         buffer += numberString;
     }
-    screen.innerText = buffer
+
 }
 
 function init() {
