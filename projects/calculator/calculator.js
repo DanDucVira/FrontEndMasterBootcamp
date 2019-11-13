@@ -6,12 +6,12 @@ const screen = document.querySelector('.screen');
 
 
 function buttonClick(value) {
-    if (isNAN(value)) {
+    if (isNaN(value)) {
         //this is not a number
         handleSymbol(value);
     } else {
         //this is a number
-        handleSymbol(value);
+        handleNumber(value);
     }
 }
 
@@ -23,6 +23,7 @@ function handleNumber(numberString) {
     } else {
         buffer += numberString;
     }
+    screen.innerText = buffer
 }
 
 function init() {
